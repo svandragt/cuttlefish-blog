@@ -1,0 +1,13 @@
+*.cache
+*.log
+*.phar
+.DS_Store
+.idea/
+.phpcs-cache
+.phpdox/
+.phpintel/
+Desktop.ini
+Thumbs.db
+composer.lock
+vendor/
+Configuration.php
