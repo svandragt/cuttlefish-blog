@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14b53de43da9e47718ca3c70962e2f69",
+    "content-hash": "8d69577e1ec5e481a142fcbc2f99c92a",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -200,7 +200,7 @@
             "source": {
                 "type": "git",
                 "url": "../cuttlefish",
-                "reference": "013390a32b6d7ed6cfd055cab4065399fecee341"
+                "reference": "081fb65e7d88cf74e92cae6f4011bde8d1e32d44"
             },
             "require": {
                 "ext-curl": "*",
@@ -213,7 +213,6 @@
             "require-dev": {
                 "roave/security-advisories": "dev-master"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -250,7 +249,7 @@
                 }
             ],
             "description": "Hackable web framework.",
-            "time": "2021-07-06T07:07:57+00:00"
+            "time": "2021-07-05T06:33:19+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -585,5 +584,8 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.4"
+    },
     "plugin-api-version": "2.1.0"
 }
