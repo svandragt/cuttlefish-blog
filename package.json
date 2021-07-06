@@ -1,0 +1,12 @@
+{
+  "name": "cuttlefish-blog",
+  "devDependencies": {
+    "husky": "^6.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "volta": {
+    "node": "14.17.0"
+  }
+}

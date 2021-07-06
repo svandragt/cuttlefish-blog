@@ -200,7 +200,7 @@
             "source": {
                 "type": "git",
                 "url": "../cuttlefish",
-                "reference": "081fb65e7d88cf74e92cae6f4011bde8d1e32d44"
+                "reference": "e4d00ee2bc5f7fee11598aefc6a34b489a02a616"
             },
             "require": {
                 "ext-curl": "*",
@@ -213,18 +213,17 @@
             "require-dev": {
                 "roave/security-advisories": "dev-master"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Cuttlefish\\": "site/www/system",
-                    "Cuttlefish\\Blog\\": "site/www/application"
+                    "Cuttlefish\\": "src"
                 }
             },
             "scripts": {
                 "setup": [
-                    "rm -rf site/www/vendor; composer install --ansi --no-progress --prefer-source",
+                    "find . -name vendor -type d -exec rm -rf {} \\;; composer install --ansi --no-progress --prefer-source",
                     "npm ci --no-progress",
-                    "php -r \"copy('Configuration.php.dist', 'site/www/Configuration.php');\"",
                     "command -v phive && phive --no-progress install --trust-gpg-keys 31C7E470E2138192,8A03EA3B385DBAA1"
                 ],
                 "prepare-commit": [
@@ -232,11 +231,8 @@
                     "@lint"
                 ],
                 "lint": [
-                    "find site/www -type f -name '*.php' -not -path 'site/www/vendor/*' -print0 | xargs -0 -n1 -P4 php -l -n | (! grep -v 'No syntax errors detected' )",
+                    "find src -type f -name '*.php' -not -path 'vendor/*' -print0 | xargs -0 -n1 -P4 php -l -n | (! grep -v 'No syntax errors detected' )",
                     "phpcs"
-                ],
-                "serve": [
-                    "php -S localhost:8080 -t site/www/"
                 ]
             },
             "license": [
@@ -249,7 +245,7 @@
                 }
             ],
             "description": "Hackable web framework.",
-            "time": "2021-07-05T06:33:19+00:00"
+            "time": "2021-07-06T07:57:17+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
