@@ -4,6 +4,15 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/site/www" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/site/data/_cache" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/michelf/php-markdown" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/svandragt/cuttlefish" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/graham-campbell/result-type" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

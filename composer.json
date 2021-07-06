@@ -34,7 +34,7 @@
   },
   "scripts": {
     "setup": [
-      "rm -rf site/www/vendor; composer install --ansi --no-progress --prefer-source",
+      "find . -name vendor -type d -exec rm -rf {} \\;; composer install --ansi --no-progress --prefer-source",
       "npm ci --no-progress",
       "php -r \"copy('Configuration.php.dist', 'site/www/Configuration.php');\"",
       "command -v phive && phive --no-progress install --trust-gpg-keys 31C7E470E2138192,8A03EA3B385DBAA1"
