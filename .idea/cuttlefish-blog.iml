@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/svandragt/cuttlefish" />
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

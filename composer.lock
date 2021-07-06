@@ -200,7 +200,7 @@
             "source": {
                 "type": "git",
                 "url": "../cuttlefish",
-                "reference": "e4d00ee2bc5f7fee11598aefc6a34b489a02a616"
+                "reference": "e9c308a6ed42884bb1d94805e6e950d704026630"
             },
             "require": {
                 "ext-curl": "*",
@@ -217,7 +217,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Cuttlefish\\": "src"
+                    "Cuttlefish\\": "src/"
                 }
             },
             "scripts": {
@@ -245,7 +245,7 @@
                 }
             ],
             "description": "Hackable web framework.",
-            "time": "2021-07-06T07:57:17+00:00"
+            "time": "2021-07-06T08:18:28+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
