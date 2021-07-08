@@ -15,7 +15,7 @@ class ControllerHome extends Controller
     /**
      * @return void
      */
-    public function records()
+    public function records(): void
     {
         $limit         = Configuration::POSTS_HOMEPAGE;
         $content_dir   = $this->getContentPath();
@@ -26,7 +26,7 @@ class ControllerHome extends Controller
     /**
      * @return void
      */
-    public function model()
+    public function model(): void
     {
         $Model       = new ModelPost($this->records);
         $this->Model = $Model->limit(Configuration::POSTS_HOMEPAGE);
@@ -35,7 +35,7 @@ class ControllerHome extends Controller
     /**
      * @return void
      */
-    public function view()
+    public function view(): void
     {
         parent::view();
         $this->View = new Html($this->Model->contents, array(

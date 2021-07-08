@@ -16,7 +16,7 @@ class ControllerFeeds extends Controller
     /**
      * @return void
      */
-    public function records()
+    public function records(): void
     {
         $limit         = Configuration::POSTS_HOMEPAGE;
         // TODO can we use the routing table to get the model of the matching controller here
@@ -28,7 +28,7 @@ class ControllerFeeds extends Controller
     /**
      * @return void
      */
-    public function model()
+    public function model(): void
     {
         // TODO replace with the model
         $Model       = new ModelPost($this->records);
@@ -38,7 +38,7 @@ class ControllerFeeds extends Controller
     /**
      * @return void
      */
-    public function view()
+    public function view(): void
     {
         parent::view();
         $this->View = new Feed($this->Model->contents);

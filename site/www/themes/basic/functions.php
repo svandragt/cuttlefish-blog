@@ -10,11 +10,11 @@ if (! defined('BASE_DIR')) {
 /**
  * Shorthand function to link to internal url
  *
- * @param  string $internal_url internal url
+ * @param string $internal_url internal url
  *
  * @return string      index independent internal url
  */
-function href($internal_url)
+function href(string $internal_url): string
 {
     $Url = new Cuttlefish\Url($internal_url);
 
@@ -28,7 +28,7 @@ function href($internal_url)
  *
  * @return string html of list of pages
  */
-function pages()
+function pages(): string
 {
     $output     = '';
     $Router     = App::getInstance()->Router;

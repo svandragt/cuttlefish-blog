@@ -14,7 +14,7 @@ class ControllerImages extends Controller
     /**
      * @return void
      */
-    public function records()
+    public function records(): void
     {
         $this->records = [ $this->getContentPath() . implode('/', $this->args) ];
     }
@@ -22,7 +22,7 @@ class ControllerImages extends Controller
     /**
      * @return void
      */
-    public function model()
+    public function model(): void
     {
         $this->Model = new ModelFile($this->records);
     }
@@ -30,7 +30,7 @@ class ControllerImages extends Controller
     /**
      * @return void
      */
-    public function view()
+    public function view(): void
     {
         parent::view();
         $this->View = new File($this->Model->contents[0]);

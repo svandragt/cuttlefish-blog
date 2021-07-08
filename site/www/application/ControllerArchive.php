@@ -15,7 +15,7 @@ class ControllerArchive extends Controller
     /**
      * @return void
      */
-    public function records()
+    public function records(): void
     {
         $content_dir   = $this->getContentPath();
         $Files         = new Files($content_dir, $this->ext);
@@ -25,7 +25,7 @@ class ControllerArchive extends Controller
     /**
      * @return void
      */
-    public function model()
+    public function model(): void
     {
         $this->Model = new self::$modelClass($this->records);
     }
@@ -33,7 +33,7 @@ class ControllerArchive extends Controller
     /**
      * @return void
      */
-    public function view()
+    public function view(): void
     {
         parent::view();
         $this->View = new Html($this->Model->contents, array(

@@ -13,7 +13,7 @@ class ControllerError extends Controller
     /**
      * @return void
      */
-    public function records()
+    public function records(): void
     {
         $path = $this->getContentPath() . implode("/", $this->args) . '.' . $this->ext;
         $this->records = [ $path ];
@@ -22,7 +22,7 @@ class ControllerError extends Controller
     /**
      * @return void
      */
-    public function model()
+    public function model(): void
     {
         $this->Model = new ModelPage($this->records);
     }
@@ -30,7 +30,7 @@ class ControllerError extends Controller
     /**
      * @return void
      */
-    public function view()
+    public function view(): void
     {
         parent::view();
 

@@ -10,7 +10,6 @@
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/symfony/polyfill-php80" />
-      <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/svandragt/cuttlefish" />
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor/graham-campbell/result-type" />
       <excludeFolder url="file://$MODULE_DIR$/site/www/vendor" />

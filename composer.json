@@ -11,14 +11,8 @@
     }
   ],
   "require": {
-      "svandragt/cuttlefish": "dev-main"
+      "svandragt/cuttlefish": "@dev"
   },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "../cuttlefish"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "Cuttlefish\\Blog\\": "site/www/application"
