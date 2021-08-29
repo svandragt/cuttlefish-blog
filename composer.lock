@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4851819e795c512cf0d8c9272cb9d10f",
+    "content-hash": "b05b22befe3e1e3af90a0ab2dba2373e",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -196,11 +196,17 @@
         },
         {
             "name": "svandragt/cuttlefish",
-            "version": "dev-cuttlefish-122-errors",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "../cuttlefish",
-                "reference": "402e0d3ba05a130db3a44bc2e5b0e14379fc1f50"
+                "url": "https://github.com/svandragt/cuttlefish.git",
+                "reference": "c6c9df5f43a6d67a527564fac9cc6b79ad962ec7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/svandragt/cuttlefish/zipball/c6c9df5f43a6d67a527564fac9cc6b79ad962ec7",
+                "reference": "c6c9df5f43a6d67a527564fac9cc6b79ad962ec7",
+                "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
@@ -220,21 +226,7 @@
                     "Cuttlefish\\": "src/"
                 }
             },
-            "scripts": {
-                "setup": [
-                    "find . -name vendor -type d -exec rm -rf {} \\;; composer install --ansi --no-progress --prefer-source",
-                    "npm ci --no-progress",
-                    "command -v phive && phive --no-progress install --trust-gpg-keys 31C7E470E2138192,8A03EA3B385DBAA1"
-                ],
-                "prepare-commit": [
-                    "phpcbf",
-                    "@lint"
-                ],
-                "lint": [
-                    "find src -type f -name '*.php' -not -path 'vendor/*' -print0 | xargs -0 -n1 -P4 php -l -n | (! grep -v 'No syntax errors detected' )",
-                    "phpcs"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -245,7 +237,11 @@
                 }
             ],
             "description": "Hackable web framework.",
-            "time": "2021-07-06T14:06:00+00:00"
+            "support": {
+                "issues": "https://github.com/svandragt/cuttlefish/issues",
+                "source": "https://github.com/svandragt/cuttlefish/tree/main"
+            },
+            "time": "2021-07-06T13:40:22+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -328,16 +324,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1"
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
-                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9174a3d80210dca8daa7f31fec659150bbeabfc6",
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +384,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -404,20 +400,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T09:27:20+00:00"
+            "time": "2021-05-27T12:26:48+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0"
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/eca0bf41ed421bed1b57c4958bab16aa86b757d0",
-                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
                 "shasum": ""
             },
             "require": {
@@ -471,7 +467,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -487,7 +483,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-07-28T13:41:28+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
