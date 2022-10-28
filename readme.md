@@ -4,6 +4,11 @@ This is an example of building a blog using [Cuttlefish](https://github.com/svan
 
 _It should be considered work in progress._
 
+## Requirements
+
+* PHP 8+ with the curl extension
+* [Phive](https://github.com/phar-io/phive/releases)
+
 ## Installation
 
 ```
